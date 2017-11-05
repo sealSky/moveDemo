@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--设置像素比-->
+   <!-- <script>
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+',user-scalable=no" />');
+
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 16 + 'px';
+    </script>-->
+    <script>
+        var pixclPatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixclPatio+',minimum-scale='+pixclPatio+',maximum-scale='+pixclPatio+',user-scalable=no" />');
+
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 16 + 'px';
+    </script>
+</head>
+<body>
+<!--顶栏固定的-->
+<div class="head_box">
+    <div class="search_box clearfix">
+        <a class="side" href="###">
+            <img src="images/Side.png" alt="">
+        </a>
+        <a href="###">友汇</a>
+        <div class="search_right clearfix">
+            <a class="glass" href="###">
+                <img src="images/椭圆-2.png" alt="">
+            </a>
+            <a class="still" href="###">
+                <img src="images/椭圆-1.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="nav_still" class="nav_still clearfix">
+        <a class="active" href="#/">发现</a>
+        <a href="#/mh">极致美护</a>
+        <a href="#/gx">个性配饰</a>
+        <a href="#/tswk">本周热卖</a>
+    </div>
+</div>
+
+<!-- 主体 -->
+<div class="main" ng-app="shopApp">
+    <!--发现-->
+    <!--<div class="discover">
+        &lt;!&ndash;广告栏&ndash;&gt;
+        <div class="banner_wrap clearfix">
+            <ul class="moveUl clearfix">
+                <li><a href="#/"><img src="images/1.png" alt=""></a></li>
+                <li><a href="#/"><img src="images/2.png" alt=""></a></li>
+            </ul>
+        </div>
+
+        &lt;!&ndash; 导航 &ndash;&gt;
+        <div class="nav">
+            <ul>
+                <li><a href="#/">
+                    <img src="images/Shape-1-copy-40.png" alt="">
+                    <span>保税区</span>
+                </a></li>
+                <li><a href="#/">
+                    <img src="images/Shape-1-copy-401.png" alt="">
+                    <span>订单</span>
+                </a></li>
+                <li><a href="#/">
+                    <img src="images/Shape-1-copy-402.png" alt="">
+                    <span>类目</span>
+                </a></li>
+                <li><a href="#/">
+                    <img src="images/Shape-1-copy-20.png" alt="">
+                    <span>闪购</span>
+                </a></li>
+            </ul>
+        </div>
+
+        &lt;!&ndash; 广告栏 &ndash;&gt;
+        <div class="advert_info">
+            <a class="active today" href="#/">今日上新</a>
+            <span class="shu"></span>
+            <a class="tomorrow" href="#/">明日</a>
+        </div>
+        &lt;!&ndash; 商品 &ndash;&gt;
+        <div class="today_goods">
+            <div class="goods_title">
+                <a href="#/">
+                    <img src="images/lb.png" alt="">
+                    <span>今日共有12个专场开售</span>
+                </a>
+            </div>
+            <ul class="goods_info">
+                <li><a href="#/">
+                    <img src="images/goods1.png" alt="">
+                </a>
+                </li>
+                <li><a href="#/">
+                    <img src="images/goods5.png" alt="">
+                </a>
+                </li>
+                <li><a href="#/">
+                    <img src="images/goods3.png" alt="">
+                </a>
+                </li>
+                <li><a href="#/">
+                    <img src="images/goods4.png" alt="">
+                </a>
+                </li>
+            </ul>
+        </div>
+    </div>-->
+
+    <!-- 模板显示 -->
+    <div ng-view></div>
+
+    <!--极致美护-->
+    <!--<div class="toiletry">
+        <div class="item">
+            <a href="###">
+                <img src="images/try1.png" alt="">
+                <span class="goods_name">泊莱雅新柔哲玫瑰水(120ML)</span><br>
+                <span>富含玫瑰香蕉精油粹深入渗透肌底，收缩毛孔，保湿滋养,二次清洁...</span><br>
+                <span>一手价：<span class="price">￥238.00</span></span>
+            </a>
+            <a href="###">
+                <img src="images/try2.png" alt="">
+                <span class="goods_name">泊莱雅新柔哲玫瑰水(120ML)</span><br>
+                <span>富含玫瑰香蕉精油粹深入渗透肌底，收缩毛孔，保湿滋养,二次清洁...</span><br>
+                <span>一手价：<span class="price">￥238.00</span></span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="###">
+                <img src="images/try3.png" alt="">
+                <span class="goods_name">缔造美丽神话美肤水(240ML)</span><br>
+                <span>富含玫瑰香蕉精油粹深入渗透肌底，收缩毛孔，保湿滋养,二次清洁...</span><br>
+                <span>一手价：<span class="price">￥238.00</span></span>
+            </a>
+            <a href="###">
+                <img src="images/try4.png" alt="">
+                <span class="goods_name">泊莱雅新柔哲玫瑰水(120ML)</span><br>
+                <span>女性的美丽，为您量身而做，拥有属于自己独一无二的味道，童话...</span><br>
+                <span>一手价：<span class="price">￥206.00</span></span>
+            </a>
+        </div>
+    </div>-->
+
+    <!--个性配饰-->
+    <!--<div class="ornament">
+        <div class="item">
+            <a href="###">
+                <img src="images/or1.png" alt="">
+                <span class="goods_name">纯手工个性水晶而定(海上花)</span><br>
+                <span>清新的海上花个性水晶耳钉，带着一点清亮漫画风，设计师甜鸟对...</span><br>
+                <span>一手价：<span class="price">￥38.00</span></span>
+            </a>
+        </div>
+        <div class="item">
+            <div class="fold fold_left">
+                <a  href="###">
+                    <img src="images/or2.png" alt="">
+                    <span class="goods_name">珍珠银项链(复古银)</span><br>
+                    <span>传承中国古典风，以珍珠银...</span><br>
+                    <span>一手价：<span class="price">￥49.00</span></span>
+                </a>
+            </div>
+            <div class="fold">
+                <a href="###">
+                    <img src="images/or2.png" alt="">
+                    <span class="goods_name">东方之珠(珍珠美)</span><br>
+                    <span>赋予东方之珠之名字，价值...</span><br>
+                    <span>一手价：<span class="price">￥69.00</span></span>
+                </a>
+            </div>
+        </div>
+    </div>-->
+
+    <!--本周热卖-->
+    <!--<div class="tswk">
+        <div class="wk">
+            <a href="###">
+                <img class="img" src="images/tswk1.png" alt="">
+                <span class="wk_price"><del>￥218</del><span class="now_price">￥129</span></span>
+            </a>
+            <a class="wk_title">&lt;!&ndash;美丽芳&nbsp;&gt;&ndash;&gt;</a>
+        </div>
+        <div class="wk">
+            <a href="###">
+                <img class="img" src="images/tswk2.png" alt="">
+                <span class="wk_price"><del>￥218</del><span class="now_price">￥129</span></span>
+            </a>
+            <a class="wk_hot"></a>
+        </div>
+        <div class="wk_item">
+            <div class="item">
+                <div class="item">
+                    <div class="fold fold_left">
+                        <a  href="###">
+                            <img src="images/tswk3.png" alt="">
+                            <span class="goods_name">珍珠银项链(复古银)</span><br>
+                            <span>传承中国古典风，以珍珠银...</span><br>
+                            <span>一手价：<span class="price">￥49.00</span></span>
+                        </a>
+                    </div>
+                    <div class="fold">
+                        <a href="###">
+                            <img src="images/tswk4.png" alt="">
+                            <span class="goods_name">东方之珠(珍珠美)</span><br>
+                            <span>赋予东方之珠之名字，价值...</span><br>
+                            <span>一手价：<span class="price">￥69.00</span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>-->
+</div>
+<!--<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>-->
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+</html>
